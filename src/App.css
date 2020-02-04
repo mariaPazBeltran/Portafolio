@@ -1,10 +1,6 @@
 .App {
   text-align: center;
 }
-.image_background, .all_container{
-  border: 0;
-  display: flex;
-} 
 .image_background{
   background-image: url("./images/fondo.jpg");
   height: 50vh;
@@ -15,8 +11,22 @@
 }
 .all_container{
   background-color: #fff;
-  margin: -150px 50px 0px;
+  margin-top: -150px;
   height: 68vh;
   border: 1px solid black;
   border-radius: 5px;
+}
+.profile_photo{
+ width: 150px;
+ height: 150px;
+ overflow: hidden;
+ border-radius: 50%;
+text-align: center;
+}
+.profile_photo img{
+  height: 150px;
+  transform: translateX(-18px);
+}
+.profile_info, .profile_description{
+padding: 3vh;
 }
