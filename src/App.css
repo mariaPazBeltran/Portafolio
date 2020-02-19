@@ -8,11 +8,12 @@
   background-position: center center;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 .all_container{
   background-color: #fff;
-  margin-top: -150px;
-  height: 68vh;
+  margin-top: -250px;
+  height: 80vh;
   border: 1px solid black;
   border-radius: 5px;
 }
@@ -29,4 +30,73 @@ text-align: center;
 }
 .profile_info, .profile_description{
 padding: 3vh;
+}
+.profile_description{
+  font-size: 20px;
+  margin-top: 30px;
+}
+.profile_info h4{
+  color: #4F908B;
+}
+.skill_container{
+  text-align: center;
+  padding: 5em;
+  float: left;
+  align-content: center;
+}
+.skill_container img {
+  width: 100px;
+  height: 100px;
+}
+.contact_container div{
+  text-align: center;
+  margin-left: 0;
+  display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.contact_container{
+  text-align: center;
+}
+.projects_container{
+  display: flex;
+  overflow-x: auto;
+  align-items: center;   height: 70vh;
+}
+.projects_container div {
+  margin-right: 15px;
+}
+
+.projects_container::-webkit-scrollbar-track {
+  background: #ddd; 
+}
+
+.projects_container::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+.projects_container::-webkit-scrollbar-thumb {
+  background: #4F908B; 
+  border-radius: 20px;
+}
+
+@media screen and (max-width:480px)and (min-width:320px){
+ .profile_photo{
+   width: 130px;
+   height: 130px;
+   margin-left: 10px;
+   margin-top: 20px;
+ }
+ .profile_photo img{
+  transform: translateX(-20px);
+  height: 130px;
+ }
+  .aboutMe_container{
+    display: flex;
+  }
+  .profile_description{
+    font-size: 18px;
+    margin-top: 0px;
+    padding: .5vh;
+  }
 }

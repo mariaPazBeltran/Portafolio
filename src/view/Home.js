@@ -11,7 +11,7 @@ class Home extends Component{
                 <div className="image_background"></div>
                 <Container>
                     <Row>
-                        <Col md={10} xs={10} lg={{ span: 10, offset: 1 }}>
+                        <Col md={12} xs={12} lg={{ span: 12}}>
                             <ShowAll/>
                         </Col>
                     </Row>
