@@ -9,12 +9,12 @@ const Contacts =()=>{
     const {state} = useContext(MyContext)
     return(
         <Row>
-            <Col lg={{ span: 9, offset: 2 }} md={{ span: 6}} sm={{ span: 7 }}>
+            <Col lg={{ span: 10, offset: 1 }} md={{ span: 12}} sm={{ span: 12 }}>
                 <div className='contact_container'>
                     {state.contacts.map((val, index)=>{
                         return <div key={index} >
-                            <img src={val.logo} alt='contact_icon'/>
-                            <span><a target='_blank' href={val.url}>{val.name}</a></span>
+                            
+                            <a target='_blank' href={val.url}><img src={val.logo} alt='contact_icon'/><p>{val.name}</p></a>
                         </div>
                     })}
                 </div>

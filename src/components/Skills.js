@@ -8,7 +8,7 @@ const Skills =()=>{
     const {state} = useContext(MyContext)
     return(
         <Row>
-            <Col lg={{ span: 9, offset: 2 }} md={{ span: 6}} sm={{ span: 7 }}>
+            <Col lg={{ span: 10, offset: 1 }} md={{ span: 12}} sm={{ span: 12 }}>
                 <div className='skill_container'>
                     {state.skills.map((images, index)=>{
                         return <img key={index} src={images} alt='skill_icon'/>

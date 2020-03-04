@@ -8,12 +8,17 @@ const AboutMe =()=>{
     return(
         <div className="aboutMe_container pt-5">
             <Row>
-                <Col lg={{ span: 3, offset: 1 }} md={{ span: 2, offset: 2 }} sm={{ span: 3, offset: 1 }}>
+                <Col lg={{ span: 3, offset: 1 }} md={{ span: 12 }} sm={{ span: 12}} xs={{span: 12}} className='mobile' >
                     <div className='profile_photo'>
                         <img alt= 'profile_Photo' src={photo}></img>
                     </div>
                 </Col>
-                <Col lg={{ span: 5, offset: 1 }} md={{ span: 6}} sm={{ span: 7 }}>
+                <Col lg={{ span: 3, offset: 1 }} md={{ span: 4}} sm={{ span: 12}} xs={{span: 12}} className='desktop' >
+                    <div className='profile_photo'>
+                        <img alt= 'profile_Photo' src={photo}></img>
+                    </div>
+                </Col>
+                <Col lg={{ span: 5, offset: 1 }} md={{ span: 6}} sm={{ span: 7 }} className="desktop">
                     <div className='profile_info'>
                         <h1>María Paz Beltrán</h1>
                         <h4>Front-end Developer</h4>
@@ -21,7 +26,11 @@ const AboutMe =()=>{
                 </Col>
             </Row>
             <Row>
-                <Col lg={{ span: 10, offset: 1 }} md={{ span: 6}} sm={{ span: 7 }}>
+                <Col lg={{ span: 10, offset: 1 }} md={{ span: 12}} sm={{ span: 12 }}>
+                    <div className='profile_info mobile text-center'>
+                        <h1>María Paz Beltrán</h1>
+                        <h4>Front-end Developer</h4>
+                    </div>
                     <div className='profile_description'>
                         <p> <strong>"Nunca digas nunca"</strong>. Una frase redundante que
                         ha simple vista carece de sentido. Pero ahora, cuando miro mis logros, es
