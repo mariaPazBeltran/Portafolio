@@ -13,7 +13,6 @@ const Contacts =()=>{
                 <div className='contact_container'>
                     {state.contacts.map((val, index)=>{
                         return <div key={index} >
-                            
                             <a target='_blank' href={val.url}><img src={val.logo} alt='contact_icon'/><p>{val.name}</p></a>
                         </div>
                     })}

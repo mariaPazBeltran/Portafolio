@@ -17,7 +17,7 @@ const InitialState = {
     contacts: [
         { logo: linkedin, url:'https://www.linkedin.com/in/mariapazbeltran/'},
         { logo: github, url:'https://github.com/mariaPazBeltran'},
-        {name: 'mariabeltra.98@gmail.com', logo: gmail}
+        {url: 'mailto:mariabeltra.98@gmail.com', logo: gmail}
     ],
     projects:[
         {   project:'Data Lovers', 
