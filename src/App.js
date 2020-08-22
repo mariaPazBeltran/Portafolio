@@ -14,33 +14,33 @@ import Contacts from './components/Contact'
 
 function App() {
     return (
-        <ProviderContext>
-            <div className="home_container">
-                <div className="image_background"></div>
-                <Container>
-                    <Row>
-                        <Col md={12} xs={12} lg={{ span: 12}}>
-                            <Row>
-                                <Col xs={12} md lg={{ span: 10, offset: 1 }}>
-                                    <div className="all_container">
-                                        <Router>
-                                            <MyNavbar/>
-                                            <Switch>
-                                                <Route exact path="/" component={ AboutMe }/>
-                                                <Route path="/skills" component={ Skills } />
-                                                <Route path="/projects" component={ Projects } />
-                                                <Route path="/contacts" component={ Contacts } />
-                                            </Switch>
+        <ProviderContext id= 'xd'>
+            
+            <div className="image_background"></div>
+            <Container>
+                <Row>
+                    <Col md={12} xs={12} lg={{ span: 12}}>
+                        <Row id='ss'>
+                            <Col xs={12} md lg={{ span: 10, offset: 1 }}>
+                                <div className="all_container">
+                                    <Router>
+                                        <MyNavbar/>
+                                        <Switch>
+                                            <Route exact path="/" component={ AboutMe }/>
+                                            <Route path="/skills" component={ Skills } />
+                                            <Route path="/projects" component={ Projects } />
+                                            <Route path="/contacts" component={ Contacts } />
+                                        </Switch>
   
-                                        </Router>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+                                    </Router>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
+            </Container>
+            
         </ProviderContext>
     )
 }
-export default App;
+export default App
