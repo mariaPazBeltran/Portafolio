@@ -10,8 +10,11 @@ const Skills =()=>{
         <Row>
             <Col lg={{ span: 10, offset: 1 }} md={{ span: 12}} sm={{ span: 12 }}>
                 <div className='skill_container'>
-                    {state.skills.map((images, index)=>{
-                        return <img key={index} src={images} alt='skill_icon'/>
+                    {state.skills.map((skill, index)=>{
+                        return <div key={index}>
+                            <img  src={skill.img} alt='skill_icon'/>
+                            <p>{skill.name}</p>
+                        </div>
                     })}
                 </div>
             </Col>

@@ -12,33 +12,43 @@ import linkedin from '../images/contacts/linkedin.png'
 // img projects
 import burger from '../images/burger.PNG'
 import lovers from '../images/lovers.PNG'
+import gato from '../images/Tic-Tac-Toe.jpg'
+
 const InitialState = {
-    skills: [reactBootstrap, css, firebase, html, js, reactjs],
+    skills: [{img:reactBootstrap,
+        name:'ReactBootstrap'}, 
+    {img:css, name:'css3'},
+    {img:firebase,name:'Firebase'},
+    {img:html, name:'HTML5'},
+    {img: js, name:'JavaScript'},
+    {img:reactjs, name:'React'}],
     contacts: [
         { logo: linkedin, url:'https://www.linkedin.com/in/mariapazbeltran/'},
         { logo: github, url:'https://github.com/mariaPazBeltran'},
         {url: 'mailto:mariabeltra.98@gmail.com', logo: gmail}
     ],
     projects:[
-        {   project:'Data Lovers', 
-            code:'https://github.com/mariaPazBeltran/SCL011-data-lovers', 
-            deploy:'https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html',
-            image:lovers, 
-            description:'Interfaz que lee, visualiza y analiza un conjunto de datos que se adecuan a los gustos y necesidades de un determinado usuario'
+        {   project:'Medieval Tic tac toe ',
+            code:'https://github.com/mariaPazBeltran/SCL011-Tic-Tac-Toe', 
+            deploy:'https://expo.io/@mary_peace/Tic-Tac-Toe', 
+            image:gato, 
+            description:'Tic-Tac-Toe es un juego entre dos jugadores que marcan los espacios de un tablero de 3×3 alternadamente. Esta vez en una app Nativa '
         },
+        
         {   project:'Burger Queen',
             code:'https://github.com/mariaPazBeltran/SCL011-Burger-Queen', 
             deploy:'https://burger-queen-2dc5a.firebaseapp.com/', 
             image:burger, 
             description:'Un pequeño restaurante de Hamburguesas, necesita una interfaz en la que puedan tomar pedidos usando una  tablet, y enviarlos a la cocina.'
         },
+        {   project:'Data Lovers', 
+            code:'https://github.com/mariaPazBeltran/SCL011-data-lovers', 
+            deploy:'https://mariapazbeltran.github.io/SCL011-data-lovers/src/index.html',
+            image:lovers, 
+            description:'Interfaz que lee, visualiza y analiza un conjunto de datos que se adecuan a los gustos y necesidades de un determinado usuario'
+        }
         
-        /*{   project:'Burger Queen',
-            code:'https://github.com/mariaPazBeltran/SCL011-Burger-Queen', 
-            deploy:'https://burger-queen-2dc5a.firebaseapp.com/', 
-            image:burger, 
-            description:'Un pequeño restaurante de Hamburguesas, que está creciendo, necesita una interfaz en la que puedan tomar pedidos usando una tablet, y enviarlos a la cocina para que se preparen ordenada y eficientemente.'
-        }*/
+      
     ]
 }
 export default InitialState
